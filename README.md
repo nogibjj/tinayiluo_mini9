@@ -62,6 +62,11 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
   + Test Jupyter Notebook and script and lib
 
+  ```
+  test:
+	python -m pytest -vv --nbval --cov=script --cov=mylib test_*.py *.ipynb
+  ```
+
   + Formats code with Python black
        
   + Lints code with Ruff
@@ -72,9 +77,11 @@ The workflow includes running a Makefile to perform tasks such as installation (
        
 + Four `yml` files in Github Actions
 
+### Summary Report and Data Visualizations 
 
+Generated the summary report (PDF) from Jupyter Notebook
 
-Step 9: I generated Data Visualizations in the output folder. 
+#### [Summary Report PDF](./Summary-Report.pdf)
 
 + summary statistics
 
@@ -119,8 +126,5 @@ Step 9: I generated Data Visualizations in the output folder.
 ![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/31a73193-129e-47dd-ac9b-d7a87e974f84)
 
 
-Step 5: I generated the summary report (PDF) from Jupyter Notebook
-
-#### [Summary Report PDF](./Summary-Report.pdf)
-
 ### Check Format and Test Approval Images
+
