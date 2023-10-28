@@ -29,44 +29,44 @@
 | output   |   1   |
 
 ## Histograms and Scatter Plot: 
-![histogram_0](output/histogram_cp.png)
+![histogram_0](output/histogram_sex.png)
 
 
-![histogram_1](output/histogram_slp.png)
-
-
-![histogram_2](output/histogram_restecg.png)
+![histogram_1](output/histogram_oldpeak.png)
 
 
 ![histogram_3](output/histogram_chol.png)
 
 
-![histogram_5](output/histogram_age.png)
+![histogram_4](output/histogram_age.png)
 
 
-![histogram_7](output/histogram_sex.png)
+![histogram_5](output/histogram_slp.png)
 
 
-![histogram_8](output/histogram_trtbps.png)
+![histogram_6](output/histogram_thalachh.png)
 
 
-![histogram_9](output/histogram_thall.png)
+![histogram_8](output/histogram_fbs.png)
 
 
-![histogram_10](output/histogram_fbs.png)
+![histogram_9](output/histogram_restecg.png)
 
 
-![histogram_11](output/histogram_thalachh.png)
+![histogram_10](output/histogram_cp.png)
 
 
-![histogram_12](output/histogram_oldpeak.png)
+![histogram_11](output/histogram_thall.png)
 
 
-![histogram_13](output/histogram_output.png)
+![scatter_12](output/scatter.png)
+![histogram_13](output/histogram_trtbps.png)
 
 
-![scatter_14](output/scatter.png)
-![histogram_15](output/histogram_caa.png)
+![histogram_14](output/histogram_caa.png)
+
+
+![histogram_15](output/histogram_output.png)
 
 
 ![histogram_16](output/histogram_exng.png)
