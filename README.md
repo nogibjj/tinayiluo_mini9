@@ -1,12 +1,12 @@
 ## Mini Project 9 Cloud Host Notebook Data Manipulation
 
-[![Install](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/install.yml)
+[![OnInstall](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/install.yml/badge.svg)](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/install.yml)
 
-[![Lint](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/lint.yml)
+[![Lint](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/lint.yml/badge.svg)](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/lint.yml)
 
-[![Format](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/format.yml)
+[![Format](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/format.yml/badge.svg)](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/format.yml)
 
-[![Test](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/tinayi_individual_project1/actions/workflows/test.yml)
+[![Test](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/test.yml/badge.svg)](https://github.com/tinayiluo0322/tinayiluo_mini9/actions/workflows/test.yml)
 
 IDS 706 Mini Project 9
 
@@ -34,17 +34,12 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
 #### [Resources](https://www.kaggle.com/datasets/rashikrahmanpritom/heart-attack-analysis-prediction-dataset) 
 
-### Overview
+### Setup and Configuration
 
-+ Setup and configuration 
++ Create Google Colab `script.ipynb`
 
-+ Data manipulation tasks 
-
-### Description
-
-+ Create a Jupyter Notebook `script.ipynb`
-
-  + Ingest
+```
++ Ingest
 
     + Read and view `Heart Attack Analysis & Prediction Dataset`
 
@@ -54,7 +49,12 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
     + Filter the Data
 
-  + Create aata visualizations (histogram, scatter plot)
+  + Create data visualizations (histogram, scatter plot)
+
+```
++ Connect Google Colab to Github 
+  
+  + Saving a copy of `script.ipynb` to Gihub
     
 + In `Makefile` run Jupyter Notebook
        
@@ -66,7 +66,6 @@ The workflow includes running a Makefile to perform tasks such as installation (
   test:
 	python -m pytest -vv --nbval --cov=script --cov=mylib test_*.py *.ipynb
   ```
-
   + Formats code with Python black
        
   + Lints code with Ruff
@@ -77,11 +76,42 @@ The workflow includes running a Makefile to perform tasks such as installation (
        
 + Four `yml` files in Github Actions
 
+### Data Manipulation Overview
+
+**1. Data Ingestion:**
+- Libraries `pandas` and `matplotlib.pyplot` are imported for data manipulation and visualization.
+- A CSV file from a URL is loaded into a DataFrame named `heart`.
+- This data is saved locally as "heart.csv".
+- View the first few rows, last few rows, column names, and the shape (number of rows and columns) of the DataFrame.
+
+**2. Exploratory Data Analysis (EDA):**
+
+   **a. General Analysis:**
+   - Summary statistics (like count, mean, standard deviation, min, quartiles, and max) for the `heart` dataset are generated using the `describe()` method.
+   - The median value for each column is calculated.
+
+   **b. Data Filtering:**
+   - A new dataset, `filtered_heart`, is created by filtering out patients whose age is greater than 50.
+   - The shape, first few rows, and summary statistics of the `filtered_heart` dataset are displayed.
+
+   **c. Visualization:**
+   
+   - Histograms:
+      - A function named `histogram` is defined to generate histograms for each numeric column in the dataset. 
+      - This function reads the data from the provided file path, iterates over each column, and for each numeric column, it plots a histogram.
+      - The function is called for "heart.csv" to display the histograms.
+      
+   - Scatter Plot:
+      - A function named `scatter_age_blood_pressure` is defined to generate a scatter plot between Age and Resting Blood Pressure from the dataset.
+      - The function reads the data from the provided file path, extracts Age (1st column) and Resting Blood Pressure (4th column), and plots them against each other.
+      - The function is called for "heart.csv" to display the scatter plot.
+
+
 ### Summary Report and Data Visualizations 
 
 Generated the summary report (PDF) from Jupyter Notebook
 
-#### [Summary Report PDF](./Summary-Report.pdf)
+#### [Summary Report PDF](./Heart_Analysis_Summary_Report.pdf)
 
 + summary statistics
 
