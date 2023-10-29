@@ -53,7 +53,11 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
 ```
 + Connect Google Colab to Github 
-    
+
+  + Visit Google Colab
+
+  + Click on Open Notebook and select the Jupyter Notebook `script.ipynb` from this repository.
+
 + In `Makefile` run Jupyter Notebook
        
   + Install all the requirements
