@@ -24,7 +24,7 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
 ### Preperation
 
-+ I used the nogibjj/tinayi_Continuous_Integration_Python for this project. 
++ I used the nogibjj/tinayi_Continuous_Integration_Python template for this project. 
 
 + I used the `Heart Attack Analysis & Prediction Dataset`.
 
@@ -36,7 +36,7 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
 ### Setup and Configuration
 
-+ Create Google Colab `script.ipynb`
++ Create Juoyter Notebook `script.ipynb`
 
 ```
 + Ingest
@@ -53,8 +53,6 @@ The workflow includes running a Makefile to perform tasks such as installation (
 
 ```
 + Connect Google Colab to Github 
-  
-  + Saving a copy of `script.ipynb` to Gihub
     
 + In `Makefile` run Jupyter Notebook
        
@@ -154,7 +152,3 @@ Generated the summary report (PDF) from Jupyter Notebook
 + scatter plot for resting blood pressure and age in heart.csv
 
 ![image](https://github.com/nogibjj/tinayi_week2_mini_project/assets/143360909/31a73193-129e-47dd-ac9b-d7a87e974f84)
-
-
-### Check Format and Test Approval Images
-
